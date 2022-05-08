@@ -52,7 +52,37 @@ body {margin:0;}
   outline-color: #00e6e6;
   outline-width: 4px;
 }
+	
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
 
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
 </style>
 </head>
 <body>
@@ -74,6 +104,14 @@ body {margin:0;}
 		</header>
 		<main>
 			<section>
+				<p>MamaFood is all about ...</p>
+			</section>
+			<section>
+				<div class="container">
+                                        <img src="https://i.cbc.ca/1.5047807.1555099921!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/senatorlemontart.jpg" alt="Cake" style="width:100%">
+					<a href="https://www.youtube.com/watch?v=QYu8OenlBQ8&t=3s">
+                                        <button type="submit">Purchase</button>
+                                </div>
 				<div>
 					<img class="pict" src=
 					"https://i.cbc.ca/1.5047807.1555099921!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/senatorlemontart.jpg"
