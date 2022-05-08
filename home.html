@@ -3,89 +3,131 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {margin:0;}
-
-.navbar {
-  overflow: hidden;
-  background-color: #007;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.header {
+  background-color: red;
+  padding: 30px;
+  text-align: center;
 }
 
-.navbar a {
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
   float: left;
   display: block;
-  color: #ff6347;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.navbar a:hover {
-  background: #ccc;
-  color: red;
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.main {
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
   padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
 }
 
-.header {
-  font-size: 60px;
-  color: #b3ffff;
-  background-color: #999999;
-  background-blend-mode: multiply;
-  background-image: url(https://c.files.bbci.co.uk/DC67/production/_114132465_053742751.jpg);
-  background-size: cover;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
 
 .pict {
   float: left;
-  height: 350px;
+  height: 200px;
   margin: 25px;
   border-radius: 5%;
   outline-style: solid;
   outline-color: #00e6e6;
   outline-width: 4px;
-}
-	
+}  
 </style>
 </head>
 <body>
 
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">Map</a>
-  <a href="#contact">Help</a>
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
 </div>
-	<head>
-		<meta charset="utf-8">
-		<title>Food 1</title>
-		<link rel="icon" href="Letter-M-icon.png">
-	</head>
 
-	<body>
-		<header class="header">
-			<h1>MamaFood</h1>
-		</header>
-		<main>
-			<section>
-				<p>MamaFood is all about ...</p>
-			</section>
-			<section>
-				<div>
-					<img class="pict" src=
-					"https://i.cbc.ca/1.5047807.1555099921!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/senatorlemontart.jpg"
-					alt=" really fancy looking dish">
-				</div>
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
 
-			</section>
+<div class="content">
+  <h3>Sticky Navigation Example</h3>
+  <img class="pict" src="https://image-us.eva.vn/upload/4-2020/images/2020-12-30/canh-quan-la-gi-dac-diem-va-tam-quan-trong-cua-chung-canh-quan--2--1609338133-734-width660height372.jpg" alt="Italian Trulli">
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
 
-		</main>
+<div>
+  <img class="pict" src="https://image-us.eva.vn/upload/4-2020/images/2020-12-30/canh-quan-la-gi-dac-diem-va-tam-quan-trong-cua-chung-canh-quan--2--1609338133-734-width660height372.jpg" alt="Italian Trulli">
+ <a href="https://www.w3schools.com/html/html_links.asp"> 
+ <button class="btn success">Success</button></a></br>
+ <button class="btn info">Info</button></br>
+ <button class="btn warning">Warning</button></br>
+ <button class="btn danger">Danger</button></br>
+ <button class="btn default">Default</button></br>
+</div>  
+  
+  
+<script>
+window.onscroll = function() {myFunction()};
 
-	</body>
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
 </html>
+
