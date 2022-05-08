@@ -1,0 +1,24 @@
+html,body {
+  margin: 0;
+}
+
+.header {
+  font-size: 60px;
+  color: #b3ffff;
+  background-color: #999999;
+  background-blend-mode: multiply;
+  background-image: url(https://c.files.bbci.co.uk/DC67/production/_114132465_053742751.jpg);
+  background-size: cover;
+}
+
+
+
+.pict {
+  float: left;
+  height: 350px;
+  margin: 25px;
+  border-radius: 5%;
+  outline-style: solid;
+  outline-color: #00e6e6;
+  outline-width: 4px;
+}
