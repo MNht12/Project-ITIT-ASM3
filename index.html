@@ -13,7 +13,32 @@ html {
   background-repeat:no-repeat;
 }
 
-img {
+
+.footer {
+    background-size: cover;
+    position: static;
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;
+    text-align: center
+}
+.footer p {
+    color:black
+}
+.footer_desc {
+    font-size: 25px;
+    margin: 10px
+}
+
+.name_container {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px
+}
+
+.pict {
   border-radius: 50%;
   border: 10px solid lightblue;
 }
@@ -99,22 +124,31 @@ As MamaFood moto is "We are deliverers that deliver a smile for our customers". 
 <img class="pict" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Coca-Cola_Glas_mit_Eis.jpg/255px-Coca-Cola_Glas_mit_Eis.jpg" alt="Chocolate cake" style="width400px;height:200px;">
 </a>
 </div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+ <div class='footer'>
+        <p style="margin-top: 10px; font-size: 25px"> The website is done by:</p>
+        <div class="name_container">
+            <p class="footer_desc">
+                Nguyen Cong Thinh
+            </p>
+            <p class="footer_desc">
+                Nguyen Nam
+            </p>
+            <p class="footer_desc">
+                Nguyen Nhat
+            </p>
+            <p class="footer_desc">
+                Duong Duc Duy Anh
+            </p>
+        </div>
+        <p style="margin-top: 1px; font-size:25px"> The website is powered by: 
+            <img style="height: 50px; position: relative; top: 7px"
+            src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png"></br>
+            <img style="height: 50px; margin-top: 4px;border-radius: 50%;"
+            src="https://i.pinimg.com/280x280_RS/65/3c/2d/653c2d6533c7a9ad457117db8cf819d2.jpg">
+        </p>
+    </div>
 
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 </body>
 </html>
